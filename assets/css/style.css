@@ -4,6 +4,11 @@
    box-sizing: inherit;
 }
 
+::selection {
+   background: tomato;
+   color: #fff;
+}
+
 body {
    box-sizing: border-box;
    font-family: "Lato", sans-serif;
@@ -14,6 +19,15 @@ h1 {
 }
 h2 {
    font-size: 2.5rem;
+   color: #575757;
+}
+
+p {
+   color: #828282;
+}
+
+.mb-2 {
+   margin-bottom: 2rem;
 }
 
 /* Helper class */
@@ -39,22 +53,15 @@ header {
          rgba(255, 255, 255, 0.9),
          rgba(255, 255, 255, 0.9)
       ),
-      url(../images/food/Project\ Cover5.png);
-      
+      url(../images/food/ProjectCover1.jpg);
 }
 .header__content {
    width: 45%;
    color: #575757;
 }
 
-.header__title {
-   margin-bottom: 2rem;
-}
-
 .header__text {
-   color: #828282;
    font-size: 1.1rem;
-   margin-bottom: 2rem;
 }
 
 .btn:link,
@@ -116,14 +123,8 @@ header {
    width: 45%;
 }
 
-.about__title {
-   color: #575757;
-   margin-bottom: 2rem;
-}
 .about__text {
    font-size: 1.1rem;
-   color: #828282;
-   margin-bottom: 2rem;
 }
 
 /* Recipies css */
@@ -132,12 +133,7 @@ header {
    padding: 8rem 3rem;
 }
 
-.recipies__title {
-   color: #575757;
-   margin-bottom: 2rem;
-}
 .recipies__text {
-   color: #828282;
    width: 50%;
    margin: 0 auto;
    margin-bottom: 2rem;
@@ -185,7 +181,6 @@ header {
 }
 
 .card p {
-   color: #828282;
    margin-bottom: 1.5rem;
 }
 
@@ -301,7 +296,6 @@ figure img {
 .newsletter__text {
    margin-bottom: 1.5rem;
    font-size: 0.9rem;
-   color: #828282;
 }
 form {
    display: flex;
@@ -332,6 +326,11 @@ input[type="email"]:focus {
    border: 2px solid tomato;
    display: inline-block;
    margin: 0;
+   cursor: pointer;
+}
+
+.form-btn:hover {
+   background: rgb(236, 86, 60);
 }
 
 footer {
@@ -346,7 +345,6 @@ footer h2 {
 }
 
 footer p {
-   color: #828282;
    line-height: 1.5;
 }
 
