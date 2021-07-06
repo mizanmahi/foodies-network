@@ -18,12 +18,12 @@ h2 {
 
 /* Helper class */
 .text-gradient {
-    background-image: linear-gradient(to right, orange, tomato);
-    display: inline-block;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
- }
+   background-image: linear-gradient(to right, orange, tomato);
+   display: inline-block;
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+}
 
 /* Heder css */
 
@@ -34,8 +34,14 @@ header {
    padding: 1rem 3rem;
    justify-content: space-between;
    align-items: center;
+   background-image: linear-gradient(
+         to right,
+         rgba(255, 255, 255, 0.9),
+         rgba(255, 255, 255, 0.9)
+      ),
+      url(../images/food/Project\ Cover5.png);
+      
 }
-
 .header__content {
    width: 45%;
    color: #575757;
@@ -143,7 +149,7 @@ header {
    flex-wrap: wrap;
 }
 
-.card:not(:last-child){
+.card:not(:last-child) {
    margin-right: 5%;
 }
 
@@ -156,14 +162,13 @@ header {
    text-align: left;
    display: flex;
    flex-direction: column;
-   transition: .2s;
+   transition: 0.2s;
    cursor: pointer;
 }
 
 .card:hover {
-    transform: scale(1.02);
+   transform: scale(1.02);
    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
-
 }
 
 .card img {
@@ -198,7 +203,7 @@ header {
 }
 
 .card__btn:hover {
-    background: rgb(240, 78, 50);
+   background: rgb(240, 78, 50);
 }
 
 /* Social css*/
@@ -234,7 +239,7 @@ header {
    left: 0;
    overflow: hidden;
    z-index: -10;
-   opacity: .5;
+   opacity: 0.5;
 }
 
 .testimonials__titile {
@@ -250,9 +255,9 @@ header {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background: rgba(255, 255, 255, .7);
+   background: rgba(255, 255, 255, 0.7);
    border-radius: 20px;
-   box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 figure {
@@ -265,7 +270,7 @@ figure {
 
 figure img {
    width: 100%;
-   transition: .5s;
+   transition: 0.5s;
    backface-visibility: hidden;
 }
 
@@ -286,61 +291,61 @@ figure img {
 
 /* Newsletter css */
 #newsletter {
-    padding: 8rem 3rem;
-    text-align: center;
+   padding: 8rem 3rem;
+   text-align: center;
 }
 .newsletter__title {
-    margin-bottom: 1.5rem;
-    width: 55%;
+   margin-bottom: 1.5rem;
+   width: 55%;
 }
 .newsletter__text {
-    margin-bottom: 1.5rem;
-    font-size: .9rem;
-    color: #828282;
+   margin-bottom: 1.5rem;
+   font-size: 0.9rem;
+   color: #828282;
 }
 form {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
 }
 
-input[type=email] {
-    padding: 17px 25px;
-    width: 350px;
-    outline: none;
-    border: 3px solid #828282;
-    color: rgb(43, 40, 40);
-    font-size: 1rem;
-    font-family: inherit;
-    margin-right: .5rem;
+input[type="email"] {
+   padding: 17px 25px;
+   width: 350px;
+   outline: none;
+   border: 3px solid #828282;
+   color: rgb(43, 40, 40);
+   font-size: 1rem;
+   font-family: inherit;
+   margin-right: 0.5rem;
 }
 
-input[type=email]:focus{
-    border-image: linear-gradient(to right, tomato, orange) 1;
+input[type="email"]:focus {
+   border-image: linear-gradient(to right, tomato, orange) 1;
 }
 
 .form-btn {
-    font-size: 15px;
-    letter-spacing: .03em;
-    color: #fff;
-    background-color: tomato;
-    padding: 1rem 1.5rem;
-    border: 2px solid tomato;
-    display: inline-block;
-    margin: 0;
+   font-size: 15px;
+   letter-spacing: 0.03em;
+   color: #fff;
+   background-color: tomato;
+   padding: 1rem 1.5rem;
+   border: 2px solid tomato;
+   display: inline-block;
+   margin: 0;
 }
 
 footer {
-   background: #0B0D17;
+   background: #0b0d17;
    padding: 5rem 3rem;
    text-align: center;
 }
 
 footer h2 {
-   color: #5B5B5B;
+   color: #5b5b5b;
    margin-bottom: 1rem;
 }
 
-footer p{
+footer p {
    color: #828282;
    line-height: 1.5;
 }
@@ -350,7 +355,7 @@ footer a {
    color: #fff;
    text-decoration: none;
    font-weight: 600;
-   transition: .2s;
+   transition: 0.2s;
 }
 
 footer a:hover {
